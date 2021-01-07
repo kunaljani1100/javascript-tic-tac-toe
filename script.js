@@ -25,10 +25,6 @@ startGame()
 
 restartButton.addEventListener('click', startGame)
 
-function leaderboard(){
-  return 'X:'+x_wins',O:'+o_wins
-}
-
 function startGame() {
   circleTurn = false
   cellElements.forEach(cell => {
@@ -76,6 +72,10 @@ function placeMark(cell, currentClass) {
 
 function swapTurns() {
   circleTurn = !circleTurn
+}
+
+function leaderboard(){
+  return 'X:'+x_wins+'O:'+o_wins
 }
 
 function setBoardHoverClass() {
