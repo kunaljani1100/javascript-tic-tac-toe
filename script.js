@@ -57,7 +57,7 @@ function handleClick(e) {
   }
 }
 
-//End the game if draw condition is true and increment the value of draw in the leaderboard by 1.
+//End the game if draw condition is true and increment the value of draw in the leaderboard by 1, else x_wins and o_wins
 function endGame(draw) {
   if (draw) {
     draws+=1
