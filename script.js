@@ -1,5 +1,9 @@
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
+
+var x_wins = 0
+var o_wins = 0
+
 const WINNING_COMBINATIONS = [
   [0, 1, 2],
   [3, 4, 5],
@@ -20,6 +24,10 @@ let circleTurn
 startGame()
 
 restartButton.addEventListener('click', startGame)
+
+function leaderboard(){
+  return 'X:'+x_wins',O:'+o_wins
+}
 
 function startGame() {
   circleTurn = false
